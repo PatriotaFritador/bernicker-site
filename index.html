@@ -1,0 +1,1657 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Viticalha Politec — Sistema de calha suspensa para cultivo semi-hidropônico em Sistema T. Patente INPI nº 10201007978-9. Filial em Senador Amaral — MG. Atendimento em todo o Brasil.">
+  <meta property="og:title" content="Viticalha Politec | Sistema T de Cultivo Semi-Hidropônico — Brasil">
+  <meta property="og:description" content="A calha suspensa com patente nacional para sistema T. Mais ergonomia, produtividade e qualidade nos frutos. Filial em Senador Amaral — MG. Fale com Paulo Bernicker.">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="pt_BR">
+  <title>Viticalha Politec | Sistema T Semi-Hidropônico — Todo o Brasil</title>
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🌱</text></svg>"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --primary:        #1E5631;
+      --primary-dark:   #153D22;
+      --primary-light:  #2D7A47;
+      --primary-rgb:    30, 86, 49;
+      --accent:         #C8971A;
+      --accent-rgb:     200, 151, 26;
+      --text:           #1a1a2e;
+      --text-muted:     #555;
+      --bg:             #f5f8f5;
+      --white:          #ffffff;
+      --border:         #e0e8e0;
+      --fonte-titulo:   'Poppins', sans-serif;
+      --fonte-corpo:    'Inter', sans-serif;
+    }
+
+    html { scroll-behavior: smooth; }
+    body { font-family: var(--fonte-corpo); color: var(--text); background: var(--bg); line-height: 1.6; }
+    .container { max-width: 1180px; margin: 0 auto; padding: 0 1.5rem; }
+
+    /* ── HEADER ── */
+    header {
+      position: sticky; top: 0; z-index: 100;
+      background: rgba(21, 61, 34, 0.97);
+      backdrop-filter: blur(8px);
+      box-shadow: 0 2px 20px rgba(0,0,0,0.2);
+    }
+    nav { display: flex; align-items: center; justify-content: space-between; height: 70px; }
+
+    .logo { display: flex; align-items: center; gap: 0.75rem; text-decoration: none; }
+    .logo-icon {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: var(--accent);
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.25rem;
+    }
+    .logo-text { color: white; font-family: var(--fonte-titulo); line-height: 1.15; }
+    .logo-text strong { display: block; font-size: 1.1rem; font-weight: 900; letter-spacing: 1px; }
+    .logo-text span   { font-size: 0.68rem; opacity: 0.75; text-transform: uppercase; letter-spacing: 2px; }
+
+    .nav-links { display: flex; align-items: center; gap: 2rem; list-style: none; }
+    .nav-links a {
+      color: rgba(255,255,255,0.82); text-decoration: none;
+      font-size: 0.88rem; font-weight: 500; transition: color 0.2s;
+    }
+    .nav-links a:hover { color: var(--accent); }
+
+    .btn-nav {
+      background: var(--accent); color: #1a1a2e !important;
+      padding: 0.5rem 1.25rem; border-radius: 50px;
+      font-weight: 700 !important; font-size: 0.85rem !important;
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      transition: background 0.2s, transform 0.2s !important;
+    }
+    .btn-nav:hover { background: #e0aa22 !important; transform: translateY(-1px); }
+
+    .hamburger { display: none; background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; }
+
+    /* ── HERO ── */
+    .hero {
+      position: relative; overflow: hidden;
+      padding: 6rem 0 5rem;
+      background:
+        linear-gradient(135deg, rgba(10,25,15,0.93) 0%, rgba(21,61,34,0.86) 60%, rgba(30,86,49,0.80) 100%),
+        url('viticalha2.jpg') center/cover no-repeat;
+      min-height: 88vh; display: flex; align-items: center;
+    }
+
+    .hero-content { position: relative; z-index: 2; max-width: 700px; }
+
+    .hero-badge {
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      background: rgba(200,151,26,0.18); border: 1px solid var(--accent);
+      color: var(--accent); padding: 0.35rem 1rem; border-radius: 50px;
+      font-size: 0.78rem; font-weight: 700; letter-spacing: 1px;
+      text-transform: uppercase; margin-bottom: 1.5rem;
+    }
+
+    .hero h1 {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(2rem, 5vw, 3.2rem);
+      font-weight: 900; color: white;
+      line-height: 1.15; margin-bottom: 1.25rem;
+    }
+    .hero h1 em { color: var(--accent); font-style: normal; }
+
+    .hero p { font-size: 1.05rem; color: rgba(255,255,255,0.85); margin-bottom: 2rem; line-height: 1.75; max-width: 580px; }
+
+    .hero-btns { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+    .btn-primary {
+      background: #25d366; color: white;
+      padding: 0.9rem 2rem; border-radius: 50px;
+      text-decoration: none; font-weight: 700; font-size: 1rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.35);
+    }
+    .btn-primary:hover { background: #1fb858; transform: translateY(-2px); }
+
+    .btn-outline {
+      background: transparent; color: white;
+      padding: 0.9rem 2rem; border-radius: 50px;
+      text-decoration: none; font-weight: 600; font-size: 1rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      border: 2px solid rgba(255,255,255,0.45);
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-outline:hover { border-color: white; background: rgba(255,255,255,0.1); }
+
+    .hero-stats { display: flex; gap: 2rem; margin-top: 3rem; flex-wrap: wrap; }
+    .hero-stat { text-align: left; }
+    .hero-stat strong {
+      display: block; font-family: var(--fonte-titulo);
+      font-size: 2rem; font-weight: 900; color: var(--accent);
+    }
+    .hero-stat span { font-size: 0.78rem; color: rgba(255,255,255,0.65); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    .wave-hero { position: absolute; bottom: -1px; left: 0; width: 100%; line-height: 0; z-index: 2; }
+    .wave-hero svg { display: block; width: 100%; height: 70px; }
+
+    /* ── SECTION BASE ── */
+    .section-title { text-align: center; margin-bottom: 3.5rem; }
+    .section-title .tag {
+      display: inline-block;
+      background: rgba(var(--primary-rgb), 0.1); color: var(--primary);
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; padding: 0.3rem 1rem; border-radius: 50px; margin-bottom: 0.75rem;
+    }
+    .section-title h2 {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(1.6rem, 3vw, 2.2rem);
+      font-weight: 900; color: var(--text); margin-bottom: 0.75rem;
+    }
+    .section-title p { color: var(--text-muted); font-size: 0.95rem; max-width: 540px; margin: 0 auto; }
+
+    /* ── CARROSSEIS DE CULTURAS ── */
+    .cultura-slider { padding: 4.5rem 0 4rem; }
+    .cultura-slider.bg-cinza  { background: var(--bg); }
+    .cultura-slider.bg-branco { background: var(--white); }
+    .cultura-slider .section-title { margin-bottom: 2.5rem; }
+
+    /* Tag dourada — destaque para a aplicação principal (morango) */
+    .cultura-slider .section-title .tag.tag-accent {
+      background: rgba(var(--accent-rgb), 0.15); color: #8a6a14;
+    }
+
+    .cultura-slider-outer {
+      width: 100%;
+      overflow: hidden;
+      mask-image: linear-gradient(to right, transparent 0, #000 60px, #000 calc(100% - 60px), transparent 100%);
+      -webkit-mask-image: linear-gradient(to right, transparent 0, #000 60px, #000 calc(100% - 60px), transparent 100%);
+    }
+    .cultura-slider-track {
+      display: flex;
+      gap: 12px;
+      will-change: transform;
+      align-items: center;
+    }
+    .cultura-slider-track img {
+      flex-shrink: 0;
+      height: 320px;
+      width: auto;
+      display: block;
+      border-radius: 14px;
+      border: 2px solid var(--primary-light);
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      object-fit: cover;
+      cursor: pointer;
+      transition: transform 0.25s, box-shadow 0.25s;
+    }
+    .cultura-slider-track img:hover {
+      transform: scale(1.02);
+      box-shadow: 0 12px 32px rgba(0,0,0,0.18);
+    }
+
+    @media (max-width: 600px) {
+      .cultura-slider-track img { height: 220px; border-radius: 10px; }
+      .cultura-slider-outer {
+        mask-image: linear-gradient(to right, transparent 0, #000 30px, #000 calc(100% - 30px), transparent 100%);
+        -webkit-mask-image: linear-gradient(to right, transparent 0, #000 30px, #000 calc(100% - 30px), transparent 100%);
+      }
+    }
+
+    /* ── NÚMEROS ── */
+    #numeros { background: var(--white); padding: 5rem 0; }
+
+    .numeros-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.5rem; }
+
+    .numero-item {
+      text-align: center; padding: 2rem 1rem;
+      border-radius: 16px;
+      background: linear-gradient(135deg, rgba(var(--primary-rgb),0.05), rgba(var(--primary-rgb),0.1));
+      border: 1px solid rgba(var(--primary-rgb),0.12);
+      transition: transform 0.3s;
+    }
+    .numero-item:hover { transform: translateY(-4px); }
+    .numero-item i { font-size: 2rem; color: var(--primary); margin-bottom: 0.75rem; display: block; }
+    .numero-item strong {
+      display: block; font-family: var(--fonte-titulo);
+      font-size: 2rem; font-weight: 900; color: var(--primary); line-height: 1; margin-bottom: 0.5rem;
+    }
+    .numero-item span { font-size: 0.83rem; color: var(--text-muted); line-height: 1.4; }
+
+    /* ── PRODUTO ── */
+    #viticalha { background: var(--bg); padding: 5rem 0; }
+
+    .produto-layout { max-width: 760px; margin: 0 auto; text-align: center; }
+
+    .produto-content .tag {
+      display: inline-block;
+      background: rgba(var(--primary-rgb),0.1); color: var(--primary);
+      font-size: 0.72rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 2px; padding: 0.3rem 1rem; border-radius: 50px; margin-bottom: 1rem;
+    }
+    .produto-content h2 {
+      font-family: var(--fonte-titulo);
+      font-size: clamp(1.55rem, 3vw, 2.1rem); font-weight: 900; margin-bottom: 1rem;
+    }
+    .produto-content h2 em { color: var(--primary); font-style: normal; }
+    .produto-content > p { color: var(--text-muted); margin-bottom: 1.5rem; line-height: 1.75; font-size: 0.95rem; }
+
+    .features-list { list-style: none; display: flex; flex-direction: column; gap: 0.9rem; margin: 0 auto 2rem; max-width: 560px; text-align: left; }
+    .features-list li { display: flex; align-items: flex-start; gap: 0.75rem; font-size: 0.93rem; }
+    .features-list li i { color: var(--primary); font-size: 1rem; margin-top: 0.15rem; flex-shrink: 0; }
+
+    .patent-box {
+      background: linear-gradient(135deg, var(--primary), var(--primary-light));
+      border-radius: 14px; padding: 1.25rem 1.5rem;
+      display: flex; align-items: center; gap: 1rem; color: white;
+      max-width: 620px; margin: 0 auto; text-align: left;
+    }
+    .patent-box i { font-size: 2rem; opacity: 0.9; flex-shrink: 0; }
+    .patent-box strong { display: block; font-size: 0.95rem; font-weight: 700; }
+    .patent-box span { font-size: 0.8rem; opacity: 0.82; }
+
+    /* ── MODELOS ── */
+    #modelos { background: var(--white); padding: 5rem 0; }
+
+    .modelos-grid { display: flex; flex-direction: column; gap: 1rem; max-width: 860px; margin: 0 auto; }
+
+    .modelo-card {
+      background: var(--bg); border-radius: 16px; padding: 1.75rem 2rem;
+      border: 2px solid var(--border);
+      transition: border-color 0.3s, transform 0.3s, box-shadow 0.3s;
+      display: grid; grid-template-columns: 220px 1fr; gap: 2rem; align-items: center;
+    }
+    .modelo-card:hover { border-color: var(--primary); transform: translateY(-2px); box-shadow: 0 12px 30px rgba(0,0,0,0.08); }
+    .modelo-card.destaque { border-color: var(--primary); }
+    .modelo-cod {
+      font-family: var(--fonte-titulo); font-size: 1.6rem; font-weight: 900;
+      color: var(--primary); margin-bottom: 0.5rem;
+    }
+    .modelo-garantia {
+      display: inline-flex; align-items: center; gap: 0.4rem;
+      background: rgba(var(--primary-rgb),0.1); color: var(--primary);
+      font-size: 0.78rem; font-weight: 700; padding: 0.3rem 0.85rem;
+      border-radius: 50px;
+    }
+    .modelo-specs {
+      list-style: none;
+      display: grid; grid-template-columns: 1fr 1fr; gap: 0.55rem 1.5rem;
+    }
+    .modelo-specs li { display: flex; align-items: center; gap: 0.6rem; font-size: 0.88rem; color: var(--text-muted); }
+    .modelo-specs li i { color: var(--primary); width: 16px; text-align: center; }
+
+    /* ── COMO FUNCIONA ── */
+    #como-funciona { background: var(--bg); padding: 5rem 0; }
+
+    .passos-grid { display: flex; align-items: flex-start; justify-content: center; gap: 0; }
+    .passo { flex: 1; text-align: center; padding: 0 1.5rem; max-width: 280px; }
+    .passo-numero {
+      width: 48px; height: 48px; border-radius: 50%;
+      background: var(--primary); color: white;
+      font-size: 1.2rem; font-weight: 900;
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.25rem;
+    }
+    .passo-icon { font-size: 2.2rem; color: var(--primary); margin-bottom: 1rem; }
+    .passo h3 { font-family: var(--fonte-titulo); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .passo p  { font-size: 0.88rem; color: var(--text-muted); line-height: 1.6; }
+    .passo-seta { color: var(--primary); font-size: 1.4rem; padding-top: 1.2rem; opacity: 0.35; flex-shrink: 0; }
+
+    /* ── DIFERENCIAIS ── */
+    #diferenciais { background: var(--white); padding: 5rem 0; }
+
+    .cards-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+    .card {
+      background: var(--white); border-radius: 16px; padding: 2rem; text-align: center;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border-top: 4px solid transparent;
+    }
+    .card:hover { transform: translateY(-6px); box-shadow: 0 12px 30px rgba(0,0,0,0.1); border-top-color: var(--primary); }
+    .card-icon {
+      width: 70px; height: 70px; border-radius: 50%;
+      background: rgba(var(--primary-rgb),0.1);
+      display: flex; align-items: center; justify-content: center;
+      margin: 0 auto 1.25rem; transition: background 0.3s;
+    }
+    .card:hover .card-icon { background: rgba(var(--primary-rgb),0.18); }
+    .card-icon i { font-size: 1.7rem; color: var(--primary); }
+    .card h3 { font-family: var(--fonte-titulo); font-size: 1.05rem; font-weight: 700; margin-bottom: 0.75rem; }
+    .card p  { font-size: 0.87rem; color: var(--text-muted); line-height: 1.65; }
+
+    /* Lightbox */
+    .lightbox {
+      position: fixed; inset: 0; z-index: 1000;
+      background: rgba(10, 20, 12, 0.94);
+      display: none; align-items: center; justify-content: center;
+      padding: 2rem;
+    }
+    .lightbox.open { display: flex; }
+    .lightbox-img {
+      max-width: 92vw; max-height: 88vh;
+      border-radius: 12px; box-shadow: 0 20px 60px rgba(0,0,0,0.5);
+      object-fit: contain;
+    }
+    .lightbox-close, .lightbox-prev, .lightbox-next {
+      position: absolute; background: rgba(255,255,255,0.12);
+      border: 1px solid rgba(255,255,255,0.25); color: white;
+      width: 48px; height: 48px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      cursor: pointer; font-size: 1.2rem;
+      transition: background 0.2s;
+    }
+    .lightbox-close:hover, .lightbox-prev:hover, .lightbox-next:hover { background: rgba(255,255,255,0.25); }
+    .lightbox-close { top: 1.5rem; right: 1.5rem; }
+    .lightbox-prev { left: 1.5rem; top: 50%; transform: translateY(-50%); }
+    .lightbox-next { right: 1.5rem; top: 50%; transform: translateY(-50%); }
+
+    /* ── VÍDEOS ── */
+    #videos { background: var(--white); padding: 5rem 0; }
+
+    .videos-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 1.5rem;
+    }
+    .video-card {
+      border-radius: 16px; overflow: hidden;
+      background: #000;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .video-card:hover { transform: translateY(-4px); box-shadow: 0 12px 30px rgba(0,0,0,0.15); }
+    .video-card video {
+      width: 100%; aspect-ratio: 9 / 16;
+      max-height: 540px;
+      object-fit: cover; display: block;
+      background: #000;
+    }
+
+    /* ── SOBRE ── */
+    #sobre {
+      background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary) 100%);
+      padding: 5rem 0;
+    }
+
+    .sobre-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: center; }
+
+    .sobre-img { border-radius: 20px; overflow: hidden; box-shadow: 0 20px 60px rgba(0,0,0,0.3); }
+    .sobre-img img { width: 100%; height: 400px; object-fit: cover; display: block; }
+
+    .sobre-content .tag-light {
+      display: inline-block;
+      background: rgba(200,151,26,0.2); border: 1px solid var(--accent);
+      color: var(--accent); font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 2px;
+      padding: 0.3rem 1rem; border-radius: 50px; margin-bottom: 1rem;
+    }
+    .sobre-content h2 { font-family: var(--fonte-titulo); font-size: clamp(1.6rem,3vw,2.2rem); font-weight: 900; color: white; margin-bottom: 1rem; }
+    .sobre-content p { color: rgba(255,255,255,0.85); margin-bottom: 1rem; line-height: 1.75; font-size: 0.93rem; }
+
+    .sobre-rep {
+      margin-top: 2rem; padding: 1.25rem 1.5rem;
+      background: rgba(255,255,255,0.1); border-radius: 14px;
+      border-left: 4px solid var(--accent);
+      display: flex; align-items: center; gap: 1rem;
+    }
+    .rep-avatar {
+      width: 52px; height: 52px; border-radius: 50%;
+      background: var(--accent); color: #1a1a2e;
+      display: flex; align-items: center; justify-content: center;
+      font-family: var(--fonte-titulo); font-weight: 900;
+      font-size: 1rem; flex-shrink: 0;
+    }
+    .rep-info strong { display: block; color: white; font-weight: 700; font-size: 0.95rem; }
+    .rep-info span   { display: block; color: rgba(255,255,255,0.65); font-size: 0.8rem; }
+
+    /* ── DEPOIMENTOS ── */
+    #depoimentos { background: var(--bg); padding: 5rem 0; }
+
+    .depos-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1.5rem; }
+
+    .depo-card {
+      background: var(--white); border-radius: 16px; padding: 2rem;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+      display: flex; flex-direction: column; gap: 1rem;
+      position: relative; border: 1px solid var(--border);
+    }
+    .depo-card::before {
+      content: '\f10d';
+      font-family: 'Font Awesome 6 Free'; font-weight: 900;
+      position: absolute; top: 1.5rem; right: 1.5rem;
+      font-size: 2rem; color: rgba(var(--primary-rgb),0.07);
+    }
+    .estrelas { color: #f39c12; font-size: 1.05rem; }
+    .depo-card p { font-size: 0.9rem; color: #555; line-height: 1.75; font-style: italic; flex: 1; }
+    .depo-author {
+      display: flex; align-items: center; gap: 0.75rem;
+      padding-top: 1rem; border-top: 1px solid var(--border);
+    }
+    .avatar {
+      width: 42px; height: 42px; border-radius: 50%;
+      background: var(--primary); color: white;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 0.8rem; font-weight: 700; flex-shrink: 0;
+      font-family: var(--fonte-titulo);
+    }
+    .depo-author strong { display: block; color: var(--text); font-size: 0.88rem; }
+    .depo-author span   { display: block; color: #999; font-size: 0.78rem; }
+
+    /* ── CTA BANNER ── */
+    .cta-banner { background: linear-gradient(135deg, #0d3320 0%, var(--primary) 100%); padding: 4.5rem 0; }
+    .cta-content { display: flex; align-items: center; justify-content: space-between; gap: 2rem; }
+    .cta-content h2 { font-family: var(--fonte-titulo); font-size: clamp(1.4rem,3vw,2rem); font-weight: 900; color: white; margin-bottom: 0.5rem; }
+    .cta-content p  { color: rgba(255,255,255,0.82); font-size: 0.93rem; }
+    .btn-cta-banner {
+      background: white; color: #25d366;
+      padding: 1rem 2.5rem; border-radius: 50px;
+      text-decoration: none; font-weight: 700; font-size: 1.05rem;
+      display: inline-flex; align-items: center; gap: 0.5rem;
+      white-space: nowrap; transition: background 0.2s, transform 0.2s;
+      box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+    }
+    .btn-cta-banner:hover { background: #f0f0f0; transform: translateY(-2px); }
+
+    /* ── FAQ ── */
+    #faq { background: var(--white); padding: 5rem 0; }
+
+    .faq-list { max-width: 780px; margin: 0 auto; display: flex; flex-direction: column; gap: 0.75rem; }
+    .faq-item { border: 1.5px solid var(--border); border-radius: 12px; overflow: hidden; background: var(--bg); }
+    .faq-item.open { border-color: var(--primary); }
+    .faq-pergunta {
+      width: 100%; padding: 1.2rem 1.5rem;
+      background: none; border: none;
+      font-family: var(--fonte-corpo); font-size: 0.93rem; font-weight: 600;
+      cursor: pointer; text-align: left;
+      display: flex; justify-content: space-between; align-items: center; gap: 1rem; color: var(--text);
+    }
+    .faq-item.open .faq-pergunta { color: var(--primary); }
+    .faq-item.open .faq-pergunta i { transform: rotate(180deg); }
+    .faq-pergunta i { transition: transform 0.3s; color: var(--primary); flex-shrink: 0; }
+    .faq-resposta { max-height: 0; overflow: hidden; transition: max-height 0.35s ease, padding 0.35s ease; font-size: 0.9rem; color: var(--text-muted); line-height: 1.7; }
+    .faq-item.open .faq-resposta { max-height: 300px; padding: 0 1.5rem 1.25rem; }
+
+    /* ── CONTATO ── */
+    #contato { background: var(--bg); padding: 5rem 0; }
+
+    .contato-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; align-items: start; }
+
+    .contato-info h3 { font-family: var(--fonte-titulo); font-size: 1.5rem; font-weight: 900; margin-bottom: 0.5rem; }
+    .contato-info > p { color: var(--text-muted); margin-bottom: 2rem; font-size: 0.93rem; }
+
+    .contato-item { display: flex; align-items: flex-start; gap: 1rem; margin-bottom: 1.25rem; }
+    .contato-item-icon {
+      width: 44px; height: 44px; border-radius: 12px;
+      background: rgba(var(--primary-rgb),0.1);
+      display: flex; align-items: center; justify-content: center; flex-shrink: 0;
+    }
+    .contato-item-icon i { color: var(--primary); font-size: 1rem; }
+    .contato-item strong { display: block; font-size: 0.78rem; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 0.1rem; }
+    .contato-item span, .contato-item a { font-size: 0.9rem; color: var(--text); font-weight: 500; }
+    .contato-item a { color: var(--primary); text-decoration: none; }
+
+    .contato-social { display: flex; gap: 0.75rem; margin-top: 1.75rem; }
+    .social-btn {
+      width: 42px; height: 42px; border-radius: 10px;
+      background: rgba(var(--primary-rgb),0.1);
+      display: flex; align-items: center; justify-content: center;
+      color: var(--primary); text-decoration: none;
+      transition: background 0.2s, color 0.2s;
+    }
+    .social-btn:hover { background: var(--primary); color: white; }
+
+    form { display: flex; flex-direction: column; gap: 1rem; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; }
+
+    label { display: block; font-size: 0.78rem; font-weight: 600; color: var(--text); margin-bottom: 0.4rem; text-transform: uppercase; letter-spacing: 0.5px; }
+
+    input, select, textarea {
+      width: 100%; padding: 0.75rem 1rem;
+      border: 1.5px solid var(--border); border-radius: 10px;
+      font-family: var(--fonte-corpo); font-size: 0.9rem; color: var(--text);
+      background: var(--white); transition: border-color 0.2s, box-shadow 0.2s; outline: none;
+    }
+    input:focus, select:focus, textarea:focus {
+      border-color: var(--primary);
+      box-shadow: 0 0 0 3px rgba(var(--primary-rgb),0.12);
+    }
+    textarea { resize: vertical; min-height: 110px; }
+
+    .btn-submit {
+      background: var(--primary); color: white;
+      padding: 0.9rem 2rem; border-radius: 50px; border: none; cursor: pointer;
+      font-family: var(--fonte-titulo); font-size: 1rem; font-weight: 700;
+      display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;
+      transition: background 0.2s, transform 0.2s;
+    }
+    .btn-submit:hover { background: var(--primary-dark); transform: translateY(-2px); }
+
+    /* ── FOOTER ── */
+    footer { background: #0a1a0d; color: rgba(255,255,255,0.75); }
+    .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1.5fr; gap: 3rem; padding: 4rem 1.5rem; }
+
+    .footer-brand p { font-size: 0.87rem; line-height: 1.7; margin: 1rem 0; color: rgba(255,255,255,0.55); }
+    .footer-cnpj { font-size: 0.76rem; color: rgba(255,255,255,0.35); }
+
+    .footer-links h4, .footer-contato h4 {
+      color: var(--accent); font-size: 0.72rem; font-weight: 700;
+      text-transform: uppercase; letter-spacing: 2px; margin-bottom: 1.25rem;
+    }
+    .footer-links ul { list-style: none; display: flex; flex-direction: column; gap: 0.6rem; }
+    .footer-links a { color: rgba(255,255,255,0.6); text-decoration: none; font-size: 0.87rem; transition: color 0.2s; }
+    .footer-links a:hover { color: var(--accent); }
+
+    .footer-contato-item { display: flex; align-items: center; gap: 0.6rem; margin-bottom: 0.75rem; font-size: 0.85rem; }
+    .footer-contato-item i { color: var(--accent); width: 16px; }
+    .footer-contato-item a { color: rgba(255,255,255,0.6); text-decoration: none; transition: color 0.2s; }
+    .footer-contato-item a:hover { color: var(--accent); }
+
+    .footer-bottom {
+      border-top: 1px solid rgba(255,255,255,0.07); padding: 1.5rem;
+      display: flex; align-items: center; justify-content: space-between;
+      font-size: 0.78rem; color: rgba(255,255,255,0.3);
+    }
+
+    /* ── WHATSAPP FLUTUANTE ── */
+    .wpp-fixo {
+      position: fixed; bottom: 2rem; right: 2rem;
+      background: #25d366; color: white;
+      width: 60px; height: 60px; border-radius: 50%;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.8rem; text-decoration: none; z-index: 999;
+      box-shadow: 0 4px 20px rgba(37,211,102,0.4);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); }
+      50%       { box-shadow: 0 4px 40px rgba(37,211,102,0.7); }
+    }
+
+    /* ── RESPONSIVO ── */
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .nav-links.open {
+        display: flex; flex-direction: column;
+        position: absolute; top: 70px; left: 0; right: 0;
+        background: var(--primary-dark); padding: 1.5rem; gap: 1.25rem; z-index: 99;
+      }
+      .hamburger { display: block; }
+      .hero { padding: 4rem 0; min-height: auto; }
+      .hero-stats { gap: 1.5rem; }
+      .numeros-grid { grid-template-columns: repeat(2, 1fr); }
+      .modelo-card { grid-template-columns: 1fr; gap: 1rem; }
+      .modelo-specs { grid-template-columns: 1fr; }
+      .passos-grid { flex-direction: column; align-items: center; gap: 2rem; }
+      .passo-seta { transform: rotate(90deg); padding-top: 0; }
+      .passo { max-width: 100%; }
+      .cards-grid { grid-template-columns: 1fr 1fr; }
+      .sobre-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .sobre-img img { height: 280px; }
+      .depos-grid { grid-template-columns: 1fr; }
+      .cta-content { flex-direction: column; text-align: center; }
+      .contato-layout { grid-template-columns: 1fr; gap: 2.5rem; }
+      .form-row { grid-template-columns: 1fr; }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+      .footer-brand { grid-column: 1 / -1; }
+      .footer-bottom { flex-direction: column; gap: 0.5rem; text-align: center; }
+    }
+    @media (max-width: 600px) {
+      .cards-grid { grid-template-columns: 1fr; }
+      .numeros-grid { grid-template-columns: 1fr 1fr; }
+      .footer-grid { grid-template-columns: 1fr; }
+      .lightbox-prev, .lightbox-next { width: 40px; height: 40px; }
+      .lightbox-prev { left: 0.75rem; }
+      .lightbox-next { right: 0.75rem; }
+    }
+  </style>
+</head>
+<body>
+
+<!-- HEADER -->
+<header>
+  <div class="container">
+    <nav>
+      <a href="#" class="logo">
+        <div class="logo-icon">🌱</div>
+        <div class="logo-text">
+          <strong>VITICALHA</strong>
+          <span>Politec Plásticos</span>
+        </div>
+      </a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#viticalha">O Produto</a></li>
+        <li><a href="#modelos">Modelos</a></li>
+        <li><a href="#diferenciais">Diferenciais</a></li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#faq">FAQ</a></li>
+        <li>
+          <a href="https://wa.me/5554996158223?text=Olá%20Paulo!%20Vim%20pelo%20site%20da%20Viticalha%20e%20gostaria%20de%20mais%20informações." target="_blank" class="btn-nav">
+            <i class="fab fa-whatsapp"></i> Falar com Bernicker
+          </a>
+        </li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <i class="fas fa-bars"></i>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="container">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <i class="fas fa-certificate"></i>
+        Patente INPI nº 10201007978-9
+      </div>
+      <h1>O Sistema T que<br><em>Transforma</em> sua<br>Produção</h1>
+      <p>
+        A Viticalha é a calha suspensa patenteada da Politec para cultivo semi-hidropônico
+        em Sistema T. Mais produtividade, menos esforço físico e frutos de qualidade superior
+        — para produtores em todo o Brasil.
+      </p>
+      <div class="hero-btns">
+        <a href="https://wa.me/5554996158223?text=Olá%20Paulo!%20Vim%20pelo%20site%20da%20Viticalha%20e%20tenho%20interesse%20na%20calha%20para%20meu%20cultivo." target="_blank" class="btn-primary">
+          <i class="fab fa-whatsapp"></i> Solicitar Orçamento
+        </a>
+        <a href="#viticalha" class="btn-outline">
+          <i class="fas fa-arrow-down"></i> Ver o Produto
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="hero-stat">
+          <strong data-count="130" data-suffix=" kg/m">130 kg/m</strong>
+          <span>capacidade de carga</span>
+        </div>
+        <div class="hero-stat">
+          <strong data-count="60" data-suffix=" meses">60 meses</strong>
+          <span>garantia (modelos premium)</span>
+        </div>
+        <div class="hero-stat">
+          <strong data-count="100" data-suffix="%">100%</strong>
+          <span>tecnologia nacional</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wave-hero">
+    <svg viewBox="0 0 1440 70" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0,35 C360,70 1080,0 1440,35 L1440,70 L0,70 Z" fill="#ffffff"/>
+    </svg>
+  </div>
+</section>
+
+<!-- CARROSSEL MORANGO -->
+<section id="morango-slider" class="cultura-slider bg-cinza">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag tag-accent"><i class="fas fa-star"></i> Aplicação que Mais Vende</span>
+      <h2>Viticalha para Morango</h2>
+      <p>A escolha de produtores de morango em todo o Brasil — produtividade, ergonomia e qualidade superior do fruto</p>
+    </div>
+  </div>
+
+  <div class="cultura-slider-outer">
+    <div class="cultura-slider-track" data-cat="morango">
+      <img src="Morango/viticalha1-1.jpg" alt="Morango em calhas Viticalha" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2020.04.36.jpeg" alt="Cultivo de morango em Sistema T" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2019.55.39%20(1).jpeg" alt="Morango Viticalha" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2019.53.12.jpeg" alt="Morango em produção" loading="lazy" />
+      <img src="Morango/viticalha3.jpg" alt="Mudas de morango em Sistema T" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2020.04.36%20(1).jpeg" alt="Cultivo de morango — Sistema T" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2019.55.39%20(2).jpeg" alt="Morango Viticalha" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2019.53.12%20(1).jpeg" alt="Morango em produção" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2019.53.11.jpeg" alt="Morango em produção" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2019.53.11%20(1).jpeg" alt="Morango em produção" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2019.53.11%20(2).jpeg" alt="Morango em produção" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-19%20at%2019.51.20.jpeg" alt="Morango em produção" loading="lazy" />
+      <img src="Morango/WhatsApp%20Image%202026-05-27%20at%2016.37.55%20(3).jpeg" alt="Morango em produção" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- CARROSSEL TOMATE -->
+<section id="tomate-slider" class="cultura-slider bg-branco">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag"><i class="fas fa-pepper-hot"></i> Cultivo de Tomate</span>
+      <h2>Viticalha para Tomate</h2>
+      <p>Solução em Sistema T também para o cultivo de tomate em ambiente protegido</p>
+    </div>
+  </div>
+
+  <div class="cultura-slider-outer">
+    <div class="cultura-slider-track" data-cat="tomate">
+      <img src="Tomate/WhatsApp%20Image%202026-05-19%20at%2019.56.48.jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.52.jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.53.jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.54.jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.55.jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.38.23.jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.38.24.jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-19%20at%2019.51.20%20(1).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-19%20at%2019.51.20%20(2).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.53%20(1).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.54%20(1).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.54%20(2).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.55%20(1).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.37.55%20(2).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.38.24%20(1).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.38.24%20(2).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+      <img src="Tomate/WhatsApp%20Image%202026-05-27%20at%2016.38.24%20(3).jpeg" alt="Tomate em Sistema T" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- CARROSSEL HORTALIÇAS -->
+<section id="hortalicas-slider" class="cultura-slider bg-cinza">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag"><i class="fas fa-leaf"></i> Cultivo de Hortaliças</span>
+      <h2>Viticalha para Hortaliças</h2>
+      <p>Ergonomia e produtividade também no cultivo de hortaliças em sistema semi-hidropônico</p>
+    </div>
+  </div>
+
+  <div class="cultura-slider-outer">
+    <div class="cultura-slider-track" data-cat="hortalicas">
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-19%20at%2019.55.41.jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-19%20at%2019.51.19.jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-19%20at%2019.51.18.jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-19%20at%2019.55.41%20(3).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-19%20at%2019.51.20%20(3).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-19%20at%2019.51.19%20(1).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-19%20at%2019.51.19%20(2).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-19%20at%2019.51.19%20(3).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.37.56.jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.37.56%20(1).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.37.56%20(2).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.37.56%20(3).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.43.41.jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.44.31.jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.44.31%20(1).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.44.32.jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.44.32%20(1).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.44.33.jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+      <img src="Hortali%C3%A7as/WhatsApp%20Image%202026-05-27%20at%2016.44.33%20(1).jpeg" alt="Hortaliças em Viticalha" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- CARROSSEL BANNERS / DESTAQUES -->
+<section id="banners-slider" class="cultura-slider bg-branco">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag"><i class="fas fa-images"></i> Destaques</span>
+      <h2>A Viticalha em Ação</h2>
+      <p>Imagens em destaque da Viticalha em propriedades pelo Brasil</p>
+    </div>
+  </div>
+
+  <div class="cultura-slider-outer">
+    <div class="cultura-slider-track" data-cat="destaques">
+      <img src="Banners/WhatsApp%20Image%202026-05-19%20at%2019.55.39.jpeg"       alt="Viticalha — destaque" loading="lazy" />
+      <img src="Banners/WhatsApp%20Image%202026-05-19%20at%2019.55.40.jpeg"       alt="Viticalha — destaque" loading="lazy" />
+      <img src="Banners/WhatsApp%20Image%202026-05-19%20at%2019.55.40%20(1).jpeg" alt="Viticalha — destaque" loading="lazy" />
+      <img src="Banners/WhatsApp%20Image%202026-05-19%20at%2019.55.41%20(1).jpeg" alt="Viticalha — destaque" loading="lazy" />
+      <img src="Banners/WhatsApp%20Image%202026-05-19%20at%2019.55.41%20(2).jpeg" alt="Viticalha — destaque" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- NÚMEROS -->
+<section id="numeros">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Especificações Técnicas</span>
+      <h2>Números que Definem a Viticalha</h2>
+      <p>Engenharia de precisão para máxima performance no campo</p>
+    </div>
+    <div class="numeros-grid">
+      <div class="numero-item">
+        <i class="fas fa-weight-hanging"></i>
+        <strong data-count="130" data-suffix=" kg">130 kg</strong>
+        <span>capacidade por metro linear com bordas reforçadas</span>
+      </div>
+      <div class="numero-item">
+        <i class="fas fa-ruler-vertical"></i>
+        <strong data-count="20" data-suffix=" cm">~20 cm</strong>
+        <span>de profundidade para pleno desenvolvimento radicular</span>
+      </div>
+      <div class="numero-item">
+        <i class="fas fa-shield-halved"></i>
+        <strong data-count="60" data-suffix=" meses">60 meses</strong>
+        <span>de garantia nos modelos 120045 e 120040</span>
+      </div>
+      <div class="numero-item">
+        <i class="fas fa-medal"></i>
+        <strong>INPI</strong>
+        <span>patente nacional registrada — exclusividade Politec</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PRODUTO -->
+<section id="viticalha">
+  <div class="container">
+    <div class="produto-layout">
+      <div class="produto-content">
+        <span class="tag">Produto Principal</span>
+        <h2>Viticalha —<br><em>Calha Suspensa</em> para<br>Sistema T</h2>
+        <p>
+          Desenvolvida pela Politec com formulação especial de aditivos, a Viticalha é o sistema
+          de calha para cultivo semi-hidropônico em Sistema T. Garante suporte robusto, uniformidade
+          de irrigação, ventilação interna e ergonomia real para o trabalhador.
+        </p>
+        <ul class="features-list">
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span><strong>Bordas reforçadas</strong> — suportam até 130 kg por metro linear sem deformação</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span><strong>Furos pré-perfurados</strong> — para passagem do fio de sustentação com precisão e agilidade</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span><strong>~20 cm de profundidade</strong> — ideal para o desenvolvimento completo do sistema radicular</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span><strong>Uniformidade de irrigação</strong> — umidade homogênea em todo o substrato, sem zonas secas</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span><strong>Posição elevada</strong> — frutos com maior exposição, visualização facilitada e colheita mais prática</span>
+          </li>
+          <li>
+            <i class="fas fa-check-circle"></i>
+            <span><strong>Ergonomia real</strong> — elimina o curvamento constante, reduzindo esforço físico do trabalhador</span>
+          </li>
+        </ul>
+        <div class="patent-box">
+          <i class="fas fa-medal"></i>
+          <div>
+            <strong>Patente INPI nº 10201007978-9</strong>
+            <span>Sistema T de plantio — tecnologia exclusiva desenvolvida e registrada no Brasil pela Politec</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- MODELOS -->
+<section id="modelos">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Linha de Produtos</span>
+      <h2>Modelos Disponíveis</h2>
+      <p>Escolha o modelo ideal para o seu tipo de cultivo e escala de produção</p>
+    </div>
+    <div class="modelos-grid">
+      <div class="modelo-card destaque">
+        <div class="modelo-info">
+          <div class="modelo-cod">120045</div>
+          <div class="modelo-garantia"><i class="fas fa-shield-halved"></i> Garantia de 60 meses</div>
+        </div>
+        <ul class="modelo-specs">
+          <li><i class="fas fa-ruler-horizontal"></i> Largura: 120 mm</li>
+          <li><i class="fas fa-layer-group"></i> Espessura: 4,5 mm</li>
+          <li><i class="fas fa-weight-hanging"></i> Suporta até 130 kg/m</li>
+          <li><i class="fas fa-star"></i> Alta durabilidade — uso intensivo</li>
+        </ul>
+      </div>
+      <div class="modelo-card destaque">
+        <div class="modelo-info">
+          <div class="modelo-cod">120040</div>
+          <div class="modelo-garantia"><i class="fas fa-shield-halved"></i> Garantia de 60 meses</div>
+        </div>
+        <ul class="modelo-specs">
+          <li><i class="fas fa-ruler-horizontal"></i> Largura: 120 mm</li>
+          <li><i class="fas fa-layer-group"></i> Espessura: 4,0 mm</li>
+          <li><i class="fas fa-weight-hanging"></i> Suporta até 130 kg/m</li>
+          <li><i class="fas fa-star"></i> Equilíbrio entre custo e performance</li>
+        </ul>
+      </div>
+      <div class="modelo-card">
+        <div class="modelo-info">
+          <div class="modelo-cod">100045</div>
+          <div class="modelo-garantia"><i class="fas fa-shield-halved"></i> Garantia de 30 meses</div>
+        </div>
+        <ul class="modelo-specs">
+          <li><i class="fas fa-ruler-horizontal"></i> Largura: 100 mm</li>
+          <li><i class="fas fa-layer-group"></i> Espessura: 4,5 mm</li>
+          <li><i class="fas fa-weight-hanging"></i> Suporta até 130 kg/m</li>
+          <li><i class="fas fa-seedling"></i> Ideal para culturas mais leves</li>
+        </ul>
+      </div>
+      <div class="modelo-card">
+        <div class="modelo-info">
+          <div class="modelo-cod">100035</div>
+          <div class="modelo-garantia"><i class="fas fa-shield-halved"></i> Garantia de 30 meses</div>
+        </div>
+        <ul class="modelo-specs">
+          <li><i class="fas fa-ruler-horizontal"></i> Largura: 100 mm</li>
+          <li><i class="fas fa-layer-group"></i> Espessura: 3,5 mm</li>
+          <li><i class="fas fa-weight-hanging"></i> Suporta até 130 kg/m</li>
+          <li><i class="fas fa-seedling"></i> Entrada no sistema T</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COMO FUNCIONA -->
+<section id="como-funciona">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Processo</span>
+      <h2>Como Funciona</h2>
+      <p>Do orçamento à produção em campo — simples e sem burocracia</p>
+    </div>
+    <div class="passos-grid">
+      <div class="passo">
+        <div class="passo-numero">1</div>
+        <div class="passo-icon"><i class="fas fa-comment-dots"></i></div>
+        <h3>Solicite o Orçamento</h3>
+        <p>Fale com Paulo Bernicker pelo WhatsApp. Informe a cultura, a escala e o modelo de interesse para receber a proposta.</p>
+      </div>
+      <div class="passo-seta"><i class="fas fa-chevron-right"></i></div>
+      <div class="passo">
+        <div class="passo-numero">2</div>
+        <div class="passo-icon"><i class="fas fa-ruler-combined"></i></div>
+        <h3>Especificação Técnica</h3>
+        <p>Definimos o modelo ideal, a quantidade e o espaçamento. A garantia é válida com instalação conforme as especificações da Politec.</p>
+      </div>
+      <div class="passo-seta"><i class="fas fa-chevron-right"></i></div>
+      <div class="passo">
+        <div class="passo-numero">3</div>
+        <div class="passo-icon"><i class="fas fa-truck-fast"></i></div>
+        <h3>Entrega na Propriedade</h3>
+        <p>A Viticalha é entregue diretamente no campo. Paulo acompanha o processo e tira todas as dúvidas de instalação e uso.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DIFERENCIAIS -->
+<section id="diferenciais">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Por Que Escolher a Viticalha</span>
+      <h2>Diferenciais que Fazem a Diferença</h2>
+      <p>Tecnologia, ergonomia e resultado comprovado para produtores em todo o Brasil</p>
+    </div>
+    <div class="cards-grid">
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-microscope"></i></div>
+        <h3>Patente Nacional Registrada</h3>
+        <p>O Sistema T da Politec é patenteado no INPI. Você investe em tecnologia genuinamente brasileira, com garantia de exclusividade e suporte técnico especializado.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-person-walking"></i></div>
+        <h3>Ergonomia para o Trabalhador</h3>
+        <p>A posição elevada do cultivo elimina o curvamento constante durante o manejo, colheita e tratamento, reduzindo esforço físico e melhorando a produtividade da equipe.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-droplet"></i></div>
+        <h3>Irrigação Uniforme</h3>
+        <p>A calha distribui a umidade de forma homogênea em todo o substrato — sem pontos secos ou encharcados, favorecendo o desenvolvimento radicular e aumentando a produção.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-wind"></i></div>
+        <h3>Ventilação Interna Superior</h3>
+        <p>O design elevado melhora a circulação de ar no interior da estrutura, reduzindo a incidência de doenças fúngicas e favorecendo a qualidade dos frutos.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-eye"></i></div>
+        <h3>Frutos mais Visíveis</h3>
+        <p>A posição suspensa garante maior exposição dos frutos, facilitando a visualização durante o monitoramento e a colheita seletiva sem danificar a planta.</p>
+      </div>
+      <div class="card">
+        <div class="card-icon"><i class="fas fa-headset"></i></div>
+        <h3>Suporte Técnico Local</h3>
+        <p>Paulo Bernicker atende todo o Brasil com orientação de instalação e suporte pós-venda. Filial em Senador Amaral — MG. Você não fica sozinho após a compra.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VÍDEOS -->
+<section id="videos">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Veja em Funcionamento</span>
+      <h2>A Viticalha em Movimento</h2>
+      <p>Cultivo real em Sistema T — produção e manejo no campo</p>
+    </div>
+    <div class="videos-grid">
+      <div class="video-card">
+        <video controls preload="metadata" playsinline>
+          <source src="WhatsApp%20Video%202026-05-19%20at%2020.05.41.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls preload="metadata" playsinline>
+          <source src="WhatsApp%20Video%202026-05-19%20at%2020.06.41.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls preload="metadata" playsinline>
+          <source src="WhatsApp%20Video%202026-05-19%20at%2020.08.15.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- LIGHTBOX -->
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Visualização ampliada">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Fechar"><i class="fas fa-times"></i></button>
+  <button class="lightbox-prev" id="lightboxPrev" aria-label="Anterior"><i class="fas fa-chevron-left"></i></button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="">
+  <button class="lightbox-next" id="lightboxNext" aria-label="Próxima"><i class="fas fa-chevron-right"></i></button>
+</div>
+
+<!-- SOBRE -->
+<section id="sobre">
+  <div class="container">
+    <div class="sobre-layout">
+      <div class="sobre-img">
+        <img
+          src="Morango/viticalha3.jpg"
+          alt="Mudas em calhas Viticalha Politec — início do cultivo em Sistema T"
+          loading="lazy"
+        >
+      </div>
+      <div class="sobre-content">
+        <span class="tag-light">Sobre a Politec</span>
+        <h2>Indústria Brasileira com Inovação de Campo</h2>
+        <p>
+          A Politec é uma indústria brasileira especializada no desenvolvimento de soluções plásticas
+          agrícolas de alta performance. Com presença no Brasil e em mercados internacionais, a empresa
+          combina rigor técnico, inovação contínua e proximidade com a realidade do produtor.
+        </p>
+        <p>
+          A Viticalha nasceu da observação dos desafios reais do cultivo semi-hidropônico em Sistema T —
+          e foi desenvolvida, testada em campo e registrada no INPI antes de chegar ao produtor. Não é
+          um produto importado adaptado: é tecnologia criada para o Brasil.
+        </p>
+        <div class="sobre-rep">
+          <div class="rep-avatar">PB</div>
+          <div class="rep-info">
+            <strong>Paulo Bernicker</strong>
+            <span>Representante Politec — Todo o Brasil · Filial: Senador Amaral, MG</span>
+            <span>Atendimento técnico e comercial direto ao produtor</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Quem Usa, Recomenda</span>
+      <h2>O que Dizem os Produtores</h2>
+      <p>Resultados reais de produtores que adotaram a Viticalha em todo o Brasil</p>
+    </div>
+    <div class="depos-grid">
+      <div class="depo-card">
+        <div class="estrelas">★★★★★</div>
+        <p>"A diferença no esforço da equipe foi imediata. Paramos de ter tantas reclamações de dor nas costas durante a colheita. E a uniformidade de irrigação melhorou muito a consistência dos frutos."</p>
+        <div class="depo-author">
+          <div class="avatar">RO</div>
+          <div>
+            <strong>Ricardo Oliveira</strong>
+            <span>Produtor — Poços de Caldas, MG</span>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card">
+        <div class="estrelas">★★★★★</div>
+        <p>"Usamos o modelo 120045 e a durabilidade é impressionante. Já no segundo ano sem qualquer problema. O Paulo Bernicker acompanhou toda a instalação e tirou todas as dúvidas."</p>
+        <div class="depo-author">
+          <div class="avatar">FC</div>
+          <div>
+            <strong>Fábio Carvalho</strong>
+            <span>Produtor — Atibaia, SP</span>
+          </div>
+        </div>
+      </div>
+      <div class="depo-card">
+        <div class="estrelas">★★★★★</div>
+        <p>"A ventilação interna melhorou bastante. Tivemos muito menos incidência de fungos esse ano comparado com o sistema anterior. Vale cada real investido na estrutura."</p>
+        <div class="depo-author">
+          <div class="avatar">AM</div>
+          <div>
+            <strong>Ana Mendes</strong>
+            <span>Produtora — Barbacena, MG</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA BANNER -->
+<section class="cta-banner">
+  <div class="container">
+    <div class="cta-content">
+      <div>
+        <h2>Pronto para Modernizar seu Cultivo?</h2>
+        <p>Fale com Paulo Bernicker e receba um orçamento personalizado para sua propriedade em qualquer estado do Brasil.</p>
+      </div>
+      <a href="https://wa.me/5554996158223?text=Olá%20Paulo!%20Vim%20pelo%20site%20da%20Viticalha%20e%20quero%20um%20orçamento%20para%20meu%20cultivo." target="_blank" class="btn-cta-banner">
+        <i class="fab fa-whatsapp"></i> Quero meu Orçamento
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ -->
+<section id="faq">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Dúvidas Frequentes</span>
+      <h2>Perguntas sobre a Viticalha</h2>
+      <p>As principais dúvidas antes de você decidir</p>
+    </div>
+    <div class="faq-list">
+      <div class="faq-item">
+        <button class="faq-pergunta" onclick="toggleFaq(this)">
+          O que é o Sistema T de plantio? <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-resposta">
+          <p>O Sistema T é um método de cultivo semi-hidropônico em que as plantas crescem em calhas suspensas em formato de "T" invertido. Isso eleva a cultura a uma altura ergonomicamente correta para o trabalhador, melhora a ventilação interna, uniformiza a irrigação e facilita a colheita e o monitoramento dos frutos.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta" onclick="toggleFaq(this)">
+          Para quais culturas a Viticalha é indicada? <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-resposta">
+          <p>A Viticalha é indicada para diversas culturas em sistema semi-hidropônico e Sistema T — incluindo morango, framboesa, mirtilo e outras frutas de mesa. Paulo Bernicker pode orientar qual modelo é mais adequado para a sua cultura específica e escala de produção.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta" onclick="toggleFaq(this)">
+          Qual a diferença entre os modelos 120 e 100? <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-resposta">
+          <p>A numeração indica a largura da calha em milímetros. Os modelos 120 (120 mm) são mais largos, oferecendo maior volume de substrato e suporte para culturas mais exigentes — e possuem garantia de 60 meses. Os modelos 100 (100 mm) são indicados para culturas mais leves ou como entrada no sistema, com garantia de 30 meses.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta" onclick="toggleFaq(this)">
+          A garantia é válida de que forma? <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-resposta">
+          <p>A garantia é válida somente com instalação e uso exclusivos no Sistema T de plantio, seguindo rigorosamente as especificações técnicas da Politec. Instalação fora das normas do fabricante cancela automaticamente a cobertura. Paulo Bernicker orienta todo o processo para garantir a validade.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta" onclick="toggleFaq(this)">
+          Qual o substrato recomendado para usar na Viticalha? <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-resposta">
+          <p>O substrato mais indicado varia conforme a cultura. O Paulo Bernicker orienta sobre as melhores combinações (fibra de coco, perlita, vermiculita, etc.) de acordo com a sua realidade. Entre em contato para uma orientação personalizada.</p>
+        </div>
+      </div>
+      <div class="faq-item">
+        <button class="faq-pergunta" onclick="toggleFaq(this)">
+          Qual o prazo de entrega para minha região? <i class="fas fa-chevron-down"></i>
+        </button>
+        <div class="faq-resposta">
+          <p>Paulo Bernicker atende todo o Brasil com filial em Senador Amaral — MG. O prazo varia conforme a quantidade do pedido e a localidade. Fale diretamente com Paulo Bernicker para confirmar o prazo para sua cidade e a disponibilidade do modelo escolhido.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTATO -->
+<section id="contato">
+  <div class="container">
+    <div class="section-title">
+      <span class="tag">Fale Conosco</span>
+      <h2>Solicite seu Orçamento</h2>
+      <p>Preencha o formulário ou fale direto com Paulo Bernicker pelo WhatsApp</p>
+    </div>
+    <div class="contato-layout">
+      <div class="contato-info">
+        <h3>Atendimento em Todo o Brasil</h3>
+        <p>Paulo Bernicker é representante Politec com filial em Senador Amaral — MG. Atendimento técnico e comercial direto para qualquer estado, da proposta à instalação.</p>
+
+        <div class="contato-item">
+          <div class="contato-item-icon"><i class="fab fa-whatsapp"></i></div>
+          <div>
+            <strong>WhatsApp</strong>
+            <a href="https://wa.me/5554996158223?text=Olá%20Paulo!%20Vim%20pelo%20site%20da%20Viticalha%20e%20gostaria%20de%20um%20orçamento." target="_blank">(54) 99615-8223</a>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-item-icon"><i class="fas fa-envelope"></i></div>
+          <div>
+            <strong>E-mail</strong>
+            <a href="mailto:bernicker@politec.agr.br">bernicker@politec.agr.br</a>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-item-icon"><i class="fas fa-map-marker-alt"></i></div>
+          <div>
+            <strong>Área de Atendimento</strong>
+            <span>Todo o Brasil · Filial: Senador Amaral, MG</span>
+          </div>
+        </div>
+        <div class="contato-item">
+          <div class="contato-item-icon"><i class="fas fa-clock"></i></div>
+          <div>
+            <strong>Retorno</strong>
+            <span>Em até 2 horas em dias úteis</span>
+          </div>
+        </div>
+
+        <div class="contato-social">
+          <a href="https://instagram.com/politecplasticos" target="_blank" class="social-btn" title="Instagram">
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a href="https://facebook.com/politecplasticos" target="_blank" class="social-btn" title="Facebook">
+            <i class="fab fa-facebook-f"></i>
+          </a>
+        </div>
+      </div>
+
+      <form onsubmit="enviarForm(event)">
+        <div class="form-row">
+          <div>
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+          </div>
+          <div>
+            <label for="telefone">WhatsApp</label>
+            <input type="tel" id="telefone" name="telefone" placeholder="(XX) XXXXX-XXXX" required>
+          </div>
+        </div>
+        <div>
+          <label for="cidade">Cidade / Estado</label>
+          <input type="text" id="cidade" name="cidade" placeholder="Ex: Poços de Caldas, MG" required>
+        </div>
+        <div>
+          <label for="cultura">Cultura</label>
+          <input type="text" id="cultura" name="cultura" placeholder="Ex: morango, framboesa, mirtilo...">
+        </div>
+        <div>
+          <label for="modelo">Modelo de Interesse</label>
+          <select id="modelo" name="modelo" required>
+            <option value="">Selecione um modelo...</option>
+            <option>120045 — 60 meses de garantia</option>
+            <option>120040 — 60 meses de garantia</option>
+            <option>100045 — 30 meses de garantia</option>
+            <option>100035 — 30 meses de garantia</option>
+            <option>Ainda não sei — quero orientação</option>
+          </select>
+        </div>
+        <div>
+          <label for="descricao">Mensagem (opcional)</label>
+          <textarea id="descricao" name="descricao" placeholder="Informe a área do cultivo, quantidade estimada de calhas ou outras dúvidas..."></textarea>
+        </div>
+        <button type="submit" class="btn-submit">
+          <i class="fab fa-whatsapp"></i> Enviar pelo WhatsApp
+        </button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <div class="logo" style="margin-bottom:1rem;">
+          <div class="logo-icon">🌱</div>
+          <div class="logo-text">
+            <strong>VITICALHA</strong>
+            <span>Politec Plásticos</span>
+          </div>
+        </div>
+        <p>Sistema de calha suspensa para cultivo semi-hidropônico em Sistema T. Patente nacional INPI nº 10201007978-9.</p>
+        <p class="footer-cnpj">CNPJ: XX.XXX.XXX/XXXX-XX — Politec Plásticos Industriais Ltda.</p>
+      </div>
+      <nav class="footer-links" aria-label="Links do rodapé">
+        <h4>Navegação</h4>
+        <ul>
+          <li><a href="#viticalha">O Produto</a></li>
+          <li><a href="#modelos">Modelos</a></li>
+          <li><a href="#diferenciais">Diferenciais</a></li>
+          <li><a href="#como-funciona">Como Funciona</a></li>
+          <li><a href="#sobre">Sobre a Politec</a></li>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+      <div class="footer-contato">
+        <h4>Contato — Todo o Brasil</h4>
+        <div class="footer-contato-item">
+          <i class="fas fa-user"></i>
+          <span>Paulo Bernicker</span>
+        </div>
+        <div class="footer-contato-item">
+          <i class="fab fa-whatsapp"></i>
+          <a href="https://wa.me/5554996158223?text=Olá%20Paulo!%20Vim%20pelo%20site%20da%20Viticalha%20e%20gostaria%20de%20um%20orçamento." target="_blank">(54) 99615-8223</a>
+        </div>
+        <div class="footer-contato-item">
+          <i class="fas fa-envelope"></i>
+          <a href="mailto:bernicker@politec.agr.br">bernicker@politec.agr.br</a>
+        </div>
+        <div class="footer-contato-item">
+          <i class="fas fa-map-marker-alt"></i>
+          <span>Todo o Brasil · Filial: Senador Amaral, MG</span>
+        </div>
+        <div class="footer-contato-item">
+          <i class="fab fa-instagram"></i>
+          <a href="https://instagram.com/politecplasticos" target="_blank">@politecplasticos</a>
+        </div>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2025 Politec Plásticos Industriais Ltda. Todos os direitos reservados.</span>
+      <span>Representante: Paulo Bernicker — Todo o Brasil · Filial: Senador Amaral, MG</span>
+    </div>
+  </div>
+</footer>
+
+<!-- WHATSAPP FLUTUANTE -->
+<a href="https://wa.me/5554996158223?text=Olá%20Paulo!%20Vim%20pelo%20site%20da%20Viticalha%20e%20gostaria%20de%20mais%20informações." target="_blank" class="wpp-fixo" title="Falar com Paulo Bernicker">
+  <i class="fab fa-whatsapp"></i>
+</a>
+
+<script>
+  document.getElementById('hamburger').addEventListener('click', () => {
+    document.getElementById('navLinks').classList.toggle('open');
+  });
+
+  function toggleFaq(btn) {
+    const item = btn.parentElement;
+    const isOpen = item.classList.contains('open');
+    document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+    if (!isOpen) item.classList.add('open');
+  }
+
+  function enviarForm(e) {
+    e.preventDefault();
+    const f = e.target;
+    const linhas = [
+      `Olá Paulo! Vim pelo site da Viticalha e gostaria de um orçamento:\n`,
+      `*Nome:* ${f.nome.value}`,
+      `*WhatsApp:* ${f.telefone.value}`,
+      `*Cidade/Estado:* ${f.cidade.value}`,
+      f.cultura.value   ? `*Cultura:* ${f.cultura.value}` : null,
+      `*Modelo:* ${f.modelo.value}`,
+      f.descricao.value ? `*Mensagem:* ${f.descricao.value}` : null,
+    ].filter(Boolean);
+    window.open(`https://wa.me/5554996158223?text=${encodeURIComponent(linhas.join('\n'))}`, '_blank');
+    f.reset();
+  }
+
+  function animateCounter(el) {
+    const target = parseInt(el.dataset.count, 10);
+    const suffix = el.dataset.suffix || '';
+    const duration = 1500;
+    const start = performance.now();
+    function step(now) {
+      const ease = 1 - Math.pow(1 - Math.min((now - start) / duration, 1), 4);
+      el.textContent = Math.floor(ease * target) + suffix;
+      if (ease < 1) requestAnimationFrame(step);
+    }
+    requestAnimationFrame(step);
+  }
+
+  const counterObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.querySelectorAll('[data-count]').forEach(animateCounter);
+        counterObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.5 });
+
+  document.querySelectorAll('#numeros, .hero-stats').forEach(el => counterObserver.observe(el));
+
+  const fadeObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.style.opacity = '1';
+        entry.target.style.transform = 'translateY(0)';
+        fadeObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.1 });
+
+  document.querySelectorAll('.card, .depo-card, .numero-item, .passo, .modelo-card').forEach(el => {
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(30px)';
+    el.style.transition = 'opacity 0.5s ease, transform 0.5s ease';
+    fadeObserver.observe(el);
+  });
+
+  // ── CARROSSEIS DE CULTURAS ── (avança 1 imagem a cada 4s, loop infinito)
+  document.querySelectorAll('.cultura-slider-track').forEach(function (track, sliderIdx) {
+    const origImgs = Array.from(track.querySelectorAll('img'));
+    const n = origImgs.length;
+    if (!n) return;
+
+    // Ao clicar em qualquer imagem do slider, abre o lightbox com as fotos da mesma categoria
+    const cat = track.dataset.cat;
+    track.addEventListener('click', function (e) {
+      if (e.target.tagName !== 'IMG') return;
+      const items = galeriaData.filter(it => it.cat === cat);
+      if (!items.length) return;
+      // src do HTML pode ter %20 mas parênteses literais — decodifica pra bater com it.src
+      let clickedSrc;
+      try { clickedSrc = decodeURI(e.target.getAttribute('src')); }
+      catch (err) { clickedSrc = e.target.getAttribute('src'); }
+      let idx = items.findIndex(it => it.src === clickedSrc);
+      if (idx < 0) idx = 0;
+      openLightbox(items, idx);
+    });
+
+    // Garante um mínimo de 6 imagens duplicando o conjunto inteiro
+    // (não imagem por imagem, pra evitar duas iguais lado a lado)
+    let pool = origImgs.slice();
+    while (pool.length < 6) {
+      origImgs.forEach(function (img) {
+        const c = img.cloneNode(true);
+        c.setAttribute('aria-hidden', 'true');
+        track.appendChild(c);
+        pool.push(c);
+      });
+    }
+
+    const baseCount = pool.length;
+
+    // Clona o conjunto inteiro ao final para o loop infinito
+    pool.forEach(function (img) {
+      const c = img.cloneNode(true);
+      c.setAttribute('aria-hidden', 'true');
+      track.appendChild(c);
+    });
+
+    let idx = 0;
+
+    function buildOffsets() {
+      const all = track.querySelectorAll('img');
+      const offsets = [0];
+      for (let i = 0; i < all.length; i++) {
+        offsets.push(offsets[i] + all[i].getBoundingClientRect().width + 12);
+      }
+      return offsets;
+    }
+
+    function advance() {
+      idx++;
+      const offsets = buildOffsets();
+      track.style.transition = 'transform 0.6s ease';
+      track.style.transform = 'translateX(-' + offsets[idx] + 'px)';
+
+      if (idx >= baseCount) {
+        setTimeout(function () {
+          track.style.transition = 'none';
+          idx = 0;
+          track.style.transform = 'translateX(0)';
+        }, 650);
+      }
+    }
+
+    // Desfaz a sincronia entre sliders dando um delay inicial diferente
+    setTimeout(function () {
+      setInterval(advance, 4000);
+    }, sliderIdx * 1300);
+  });
+
+  // ── GALERIA ──
+  // Codifica cada segmento do caminho (espaços, parênteses, cedilhas) preservando as barras
+  const encodePath = (p) => p.split('/').map(encodeURIComponent).join('/');
+
+  const galeriaData = [
+    // Destaques (Banners)
+    { cat: 'destaques', src: 'Banners/WhatsApp Image 2026-05-19 at 19.55.39.jpeg',     alt: 'Viticalha — destaque' },
+    { cat: 'destaques', src: 'Banners/WhatsApp Image 2026-05-19 at 19.55.40.jpeg',     alt: 'Viticalha — destaque' },
+    { cat: 'destaques', src: 'Banners/WhatsApp Image 2026-05-19 at 19.55.40 (1).jpeg', alt: 'Viticalha — destaque' },
+    { cat: 'destaques', src: 'Banners/WhatsApp Image 2026-05-19 at 19.55.41 (1).jpeg', alt: 'Viticalha — destaque' },
+    { cat: 'destaques', src: 'Banners/WhatsApp Image 2026-05-19 at 19.55.41 (2).jpeg', alt: 'Viticalha — destaque' },
+
+    // Morango
+    { cat: 'morango', src: 'Morango/viticalha1-1.jpg', alt: 'Morango em calhas Viticalha' },
+    { cat: 'morango', src: 'Morango/viticalha3.jpg',   alt: 'Mudas de morango em Sistema T' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 20.04.36.jpeg',     alt: 'Cultivo de morango — Sistema T' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 20.04.36 (1).jpeg', alt: 'Cultivo de morango — Sistema T' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 19.55.39 (1).jpeg', alt: 'Morango Viticalha' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 19.55.39 (2).jpeg', alt: 'Morango Viticalha' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 19.53.12.jpeg',     alt: 'Morango em produção' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 19.53.12 (1).jpeg', alt: 'Morango em produção' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 19.53.11.jpeg',     alt: 'Morango em produção' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 19.53.11 (1).jpeg', alt: 'Morango em produção' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 19.53.11 (2).jpeg', alt: 'Morango em produção' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-19 at 19.51.20.jpeg',     alt: 'Morango em produção' },
+    { cat: 'morango', src: 'Morango/WhatsApp Image 2026-05-27 at 16.37.55 (3).jpeg', alt: 'Morango em produção' },
+
+    // Tomate
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-19 at 19.56.48.jpeg',         alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-19 at 19.51.20 (1).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-19 at 19.51.20 (2).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.52.jpeg',         alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.53.jpeg',         alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.53 (1).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.54.jpeg',         alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.54 (1).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.54 (2).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.55.jpeg',         alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.55 (1).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.37.55 (2).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.38.23.jpeg',         alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.38.24.jpeg',         alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.38.24 (1).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.38.24 (2).jpeg',     alt: 'Tomate em Sistema T' },
+    { cat: 'tomate', src: 'Tomate/WhatsApp Image 2026-05-27 at 16.38.24 (3).jpeg',     alt: 'Tomate em Sistema T' },
+
+    // Hortaliças
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-19 at 19.55.41.jpeg',     alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-19 at 19.55.41 (3).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-19 at 19.51.20 (3).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-19 at 19.51.19.jpeg',     alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-19 at 19.51.19 (1).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-19 at 19.51.19 (2).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-19 at 19.51.19 (3).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-19 at 19.51.18.jpeg',     alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.37.56.jpeg',     alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.37.56 (1).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.37.56 (2).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.37.56 (3).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.43.41.jpeg',     alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.44.31.jpeg',     alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.44.31 (1).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.44.32.jpeg',     alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.44.32 (1).jpeg', alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.44.33.jpeg',     alt: 'Hortaliças em Viticalha' },
+    { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-05-27 at 16.44.33 (1).jpeg', alt: 'Hortaliças em Viticalha' },
+
+    // Arame (Sistema de Sustentação)
+    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-05-19 at 19.51.47.jpeg',     alt: 'Sistema de arame de sustentação' },
+    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-05-19 at 19.51.48.jpeg',     alt: 'Sistema de arame de sustentação' },
+    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-05-19 at 19.51.48 (1).jpeg', alt: 'Sistema de arame de sustentação' },
+  ];
+
+  let lbItems = [], lbIdx = 0;
+
+  // ── LIGHTBOX ──
+  const lightbox      = document.getElementById('lightbox');
+  const lightboxImg   = document.getElementById('lightboxImg');
+  const lightboxClose = document.getElementById('lightboxClose');
+  const lightboxPrev  = document.getElementById('lightboxPrev');
+  const lightboxNext  = document.getElementById('lightboxNext');
+
+  function openLightbox(items, idx) {
+    lbItems = items; lbIdx = idx;
+    updateLightbox();
+    lightbox.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeLightbox() {
+    lightbox.classList.remove('open');
+    document.body.style.overflow = '';
+  }
+  function updateLightbox() {
+    if (!lbItems.length) return;
+    lightboxImg.src = encodePath(lbItems[lbIdx].src);
+    lightboxImg.alt = lbItems[lbIdx].alt;
+  }
+  function prevLightbox() { lbIdx = (lbIdx - 1 + lbItems.length) % lbItems.length; updateLightbox(); }
+  function nextLightbox() { lbIdx = (lbIdx + 1) % lbItems.length; updateLightbox(); }
+
+  lightboxClose.addEventListener('click', closeLightbox);
+  lightboxPrev.addEventListener('click', prevLightbox);
+  lightboxNext.addEventListener('click', nextLightbox);
+  lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+  document.addEventListener('keydown', (e) => {
+    if (!lightbox.classList.contains('open')) return;
+    if (e.key === 'Escape')     closeLightbox();
+    if (e.key === 'ArrowLeft')  prevLightbox();
+    if (e.key === 'ArrowRight') nextLightbox();
+  });
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Viticalha Politec — Paulo Bernicker",
+  "description": "Sistema de calha suspensa para cultivo semi-hidropônico em Sistema T. Patente INPI nº 10201007978-9. Atendimento em todo o Brasil. Filial em Senador Amaral, MG.",
+  "telephone": "+5554996158223",
+  "email": "bernicker@politec.agr.br",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Senador Amaral",
+    "addressRegion": "MG",
+    "addressCountry": "BR"
+  },
+  "areaServed": "Brasil",
+  "openingHours": "Mo-Fr 08:00-18:00"
+}
+</script>
+
+</body>
+</html>
