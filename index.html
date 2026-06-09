@@ -355,7 +355,7 @@
 
     .videos-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 1.5rem;
     }
     .video-card {
@@ -368,8 +368,16 @@
     .video-card video {
       width: 100%; aspect-ratio: 9 / 16;
       max-height: 540px;
-      object-fit: cover; display: block;
+      object-fit: contain; display: block;
       background: #000;
+    }
+    .video-card video:fullscreen { object-fit: contain; }
+    .video-card video:-webkit-full-screen { object-fit: contain; }
+    @media (max-width: 900px) {
+      .videos-grid { grid-template-columns: repeat(2, 1fr); }
+    }
+    @media (max-width: 600px) {
+      .videos-grid { grid-template-columns: 1fr; }
     }
 
     /* ── SOBRE ── */
@@ -990,6 +998,12 @@
           Seu navegador não suporta vídeo HTML5.
         </video>
       </div>
+      <div class="video-card">
+        <video controls preload="metadata" playsinline>
+          <source src="Video%20italo.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
     </div>
   </div>
 </section>
@@ -1330,6 +1344,14 @@
   }, { threshold: 0.5 });
 
   document.querySelectorAll('#numeros, .hero-stats').forEach(el => counterObserver.observe(el));
+
+  // Pausa os outros vídeos quando um começa a tocar
+  const allVideos = document.querySelectorAll('#videos video');
+  allVideos.forEach(video => {
+    video.addEventListener('play', () => {
+      allVideos.forEach(other => { if (other !== video) other.pause(); });
+    });
+  });
 
   const fadeObserver = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
