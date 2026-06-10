@@ -155,7 +155,7 @@
     .section-title p { color: var(--text-muted); font-size: 0.95rem; max-width: 540px; margin: 0 auto; }
 
     /* ── CARROSSEIS DE CULTURAS ── */
-    .cultura-slider { padding: 4.5rem 0 4rem; }
+    .cultura-slider { padding: 2.5rem 0 2rem; }
     .cultura-slider.bg-cinza  { background: var(--bg); }
     .cultura-slider.bg-branco { background: var(--white); }
     .cultura-slider .section-title { margin-bottom: 2.5rem; }
@@ -792,6 +792,43 @@
   </div>
 </section>
 
+<!-- CARROSSEL ARAME REVESTIDO -->
+<section id="arame-slider" class="cultura-slider bg-branco">
+  <div class="container">
+    <div class="section-title">
+      <h2>Viticalha com Arame Revestido Politec</h2>
+      <p>Tecnologia pensada para você.</p>
+    </div>
+  </div>
+
+  <div class="cultura-slider-outer">
+    <div class="cultura-slider-track" data-cat="arame">
+      <img src="Arame/WhatsApp%20Image%202026-06-09%20at%2006.25.46.jpeg" alt="Arame revestido Politec" loading="lazy" />
+      <img src="Arame/WhatsApp%20Image%202026-06-09%20at%2006.25.46%20(1).jpeg" alt="Arame revestido Politec" loading="lazy" />
+      <img src="Arame/WhatsApp%20Image%202026-06-09%20at%2006.25.46%20(2).jpeg" alt="Arame revestido Politec" loading="lazy" />
+      <img src="Arame/WhatsApp%20Image%202026-06-09%20at%2006.25.46%20(3).jpeg" alt="Arame revestido Politec" loading="lazy" />
+    </div>
+  </div>
+</section>
+
+<!-- CARROSSEL FILME SANFONADO (comentado temporariamente)
+<section id="filme-slider" class="cultura-slider bg-cinza">
+  <div class="container">
+    <div class="section-title">
+      <h2>Filme Sanfonado Politec</h2>
+      <p>Politec "Vive o Agro". Durabilidade é nosso objetivo.</p>
+    </div>
+  </div>
+
+  <div class="cultura-slider-outer">
+    <div class="cultura-slider-track" data-cat="filme">
+      <img src="Filme%20sanfonado/WhatsApp%20Image%202026-06-09%20at%2006.28.52.jpeg" alt="Filme sanfonado Politec" loading="lazy" />
+      <img src="Filme%20sanfonado/WhatsApp%20Image%202026-06-09%20at%2006.29.06.jpeg" alt="Filme sanfonado Politec" loading="lazy" />
+    </div>
+  </div>
+</section>
+-->
+
 <!-- CARROSSEL BANNERS / DESTAQUES -->
 <section id="banners-slider" class="cultura-slider bg-branco">
   <div class="container">
@@ -982,28 +1019,48 @@
     <div class="videos-grid">
       <div class="video-card">
         <video controls preload="metadata" playsinline>
-          <source src="WhatsApp%20Video%202026-05-19%20at%2020.05.41.mp4" type="video/mp4">
+          <source src="Videos/WhatsApp%20Video%202026-05-19%20at%2020.05.41.mp4" type="video/mp4">
           Seu navegador não suporta vídeo HTML5.
         </video>
       </div>
       <div class="video-card">
         <video controls preload="metadata" playsinline>
-          <source src="WhatsApp%20Video%202026-05-19%20at%2020.06.41.mp4" type="video/mp4">
+          <source src="Videos/WhatsApp%20Video%202026-05-19%20at%2020.06.41.mp4" type="video/mp4">
           Seu navegador não suporta vídeo HTML5.
         </video>
       </div>
       <div class="video-card">
         <video controls preload="metadata" playsinline>
-          <source src="WhatsApp%20Video%202026-05-19%20at%2020.08.15.mp4" type="video/mp4">
+          <source src="Videos/WhatsApp%20Video%202026-05-19%20at%2020.08.15.mp4" type="video/mp4">
           Seu navegador não suporta vídeo HTML5.
         </video>
       </div>
       <div class="video-card">
         <video controls preload="metadata" playsinline>
-          <source src="Video%20italo.mp4" type="video/mp4">
+          <source src="Videos/Video%20italo.mp4" type="video/mp4">
           Seu navegador não suporta vídeo HTML5.
         </video>
       </div>
+      <div class="video-card">
+        <video controls preload="metadata" playsinline>
+          <source src="Videos/WhatsApp%20Video%202026-05-27%20at%2016.37.55.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+      <div class="video-card">
+        <video controls preload="metadata" playsinline>
+          <source src="Arame/WhatsApp%20Video%202026-06-09%20at%2006.30.45.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+      <!-- Vídeo Filme sanfonado (comentado temporariamente)
+      <div class="video-card">
+        <video controls preload="metadata" playsinline>
+          <source src="Filme%20sanfonado/WhatsApp%20Video%202026-06-09%20at%2006.30.06.mp4" type="video/mp4">
+          Seu navegador não suporta vídeo HTML5.
+        </video>
+      </div>
+      -->
     </div>
   </div>
 </section>
@@ -1508,10 +1565,15 @@
     { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-06-01 at 10.00.55 (2).jpeg', alt: 'Hortaliças em Viticalha' },
     { cat: 'hortalicas', src: 'Hortaliças/WhatsApp Image 2026-06-01 at 10.00.56.jpeg',     alt: 'Hortaliças em Viticalha' },
 
-    // Arame (Sistema de Sustentação)
-    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-05-19 at 19.51.47.jpeg',     alt: 'Sistema de arame de sustentação' },
-    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-05-19 at 19.51.48.jpeg',     alt: 'Sistema de arame de sustentação' },
-    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-05-19 at 19.51.48 (1).jpeg', alt: 'Sistema de arame de sustentação' },
+    // Arame Revestido
+    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-06-09 at 06.25.46.jpeg',     alt: 'Arame revestido Politec' },
+    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-06-09 at 06.25.46 (1).jpeg', alt: 'Arame revestido Politec' },
+    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-06-09 at 06.25.46 (2).jpeg', alt: 'Arame revestido Politec' },
+    { cat: 'arame', src: 'Arame/WhatsApp Image 2026-06-09 at 06.25.46 (3).jpeg', alt: 'Arame revestido Politec' },
+
+    // Filme Sanfonado (comentado temporariamente)
+    // { cat: 'filme', src: 'Filme sanfonado/WhatsApp Image 2026-06-09 at 06.28.52.jpeg', alt: 'Filme sanfonado Politec' },
+    // { cat: 'filme', src: 'Filme sanfonado/WhatsApp Image 2026-06-09 at 06.29.06.jpeg', alt: 'Filme sanfonado Politec' },
   ];
 
   let lbItems = [], lbIdx = 0;
