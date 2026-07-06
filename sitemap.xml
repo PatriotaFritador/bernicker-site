@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://gauchodapolitec.com.br/</loc>
+    <lastmod>2026-06-09</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://gauchodapolitec.com.br/Morango/WhatsApp%20Image%202026-06-01%20at%2009.09.40.jpeg</image:loc>
+      <image:title>Cultivo de morango em Sistema T com Viticalha Politec</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gauchodapolitec.com.br/Tomate/WhatsApp%20Image%202026-06-01%20at%2009.32.49.jpeg</image:loc>
+      <image:title>Cultivo de tomate suspenso na Viticalha Politec</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://gauchodapolitec.com.br/Hortali%C3%A7as/WhatsApp%20Image%202026-06-01%20at%2010.00.54.jpeg</image:loc>
+      <image:title>Hortaliças cultivadas em Sistema T semi-hidropônico</image:title>
+    </image:image>
+  </url>
+  <url>
+    <loc>https://gauchodapolitec.com.br/#viticalha</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gauchodapolitec.com.br/#modelos</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+  <url>
+    <loc>https://gauchodapolitec.com.br/#diferenciais</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gauchodapolitec.com.br/#como-funciona</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gauchodapolitec.com.br/#faq</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://gauchodapolitec.com.br/#contato</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.9</priority>
+  </url>
+</urlset>
